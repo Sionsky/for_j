@@ -7,11 +7,6 @@
 #include <algorithm>
 #include <cmath>
 
-// 0 - �� ������
-// 1 - ������
-// 2 - ����
-
-
 struct Data
 {
 	int status = 0;
@@ -60,9 +55,8 @@ void main(int argc, char* argv[])
 
 	int maxCount = 0;
 
-	bool combo = false; // ������ �����
-
-	// �������� �� ������������ ���������� ����� � ����
+	bool combo = false; 
+	
 	///////////////////////////////////////////////////////////////////////////
 	for (time = timeMin; time <= timeMax;) {
 		for (size_t i = 0; i < vData.size(); i++) {
@@ -90,7 +84,6 @@ void main(int argc, char* argv[])
 	}
 
 	for (time = timeMin; time <= timeMax;) {
-		// ���������� � ������� ��������� �����
 		///////////////////////////////////////////////////////////////////////////
 		for (int i = 0; i < vData.size(); i++) {
 			if (vData[i].in == time)  {
@@ -101,7 +94,7 @@ void main(int argc, char* argv[])
 		}
 		///////////////////////////////////////////////////////////////////////////
 		
-		// �������� �� �������� �������
+	
 		///////////////////////////////////////////////////////////////////////////
 		for (int i = 0; i < vCount.size(); i++) { 
 			if (vCount[i].out == time) {
